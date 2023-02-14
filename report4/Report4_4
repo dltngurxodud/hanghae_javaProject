@@ -11,12 +11,14 @@ class Exercise5_4 {
 	int total = 0;
 	float average = 0;
 
-	for ( int i = 0; i <= arr.length -1 ; i++) {
-                for ( int j = 0; j <= arr.length ; j++) {
-                    total += arr[i][j];
-                    average /= total + arr[i][j];
-                }
-            }
+	// for 문을 통하여 배열에 진입
+    	for(int i = 0 ;i < arr.length; i++){
+
+    	for(int j =0; j < arr[i].length; j++){
+    		total += arr[i][j];
+            average /= total + arr[i][j];
+    	}
+    }
 
 	System.out.println("total=" + total);
 	System.out.println("average=" + average);
