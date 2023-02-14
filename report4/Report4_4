@@ -19,10 +19,7 @@ class Exercise5_4 {
     		total += arr[i][j];
 
     	}
-
     }
-
-
 
     average = (float)total / (arr.length * arr[0].length);
 
