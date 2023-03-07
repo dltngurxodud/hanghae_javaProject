@@ -30,7 +30,7 @@ public class Post extends Timestamped{
     private String username;
 
     @ManyToOne // To 앞에 있는게 현재 엔티티를 말하는지?
-    @JoinColumn //
+    @JoinColumn(name = "user_id") //
     private User user; // post와 조인해서 다대일 관계 만들고
 
     public Post(PostRequestDto postRequestDto, User user) {
