@@ -1,6 +1,5 @@
 package com.example.springboardlv2.service;
 
-
 import com.example.springboardlv2.dto.PostRequestDto;
 import com.example.springboardlv2.dto.PostResponseDto;
 import com.example.springboardlv2.dto.ResponseDto;
@@ -115,6 +114,8 @@ public class PostService {
         }
         return new ResponseDto("삭제 완료", HttpStatus.OK.value());
     }
+
+
 
     private User userInfo(HttpServletRequest request) { // 여기 부분은 무엇인가? 유저 메서드를 끌고와서 토큰?
         String token = jwtUtil.resolveToken(request); // request로 사용자 정보 가져오기 토큰 가져오기

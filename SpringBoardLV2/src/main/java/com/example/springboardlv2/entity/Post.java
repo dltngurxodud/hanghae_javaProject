@@ -26,7 +26,6 @@ public class Post extends Timestamped{
 
     // 뭔가 username이랑 연결해야할것 같음. 연관관계를 형성해야 할것 같다. 외래키를 사용하여
 
-
     @ManyToOne // To 앞에 있는게 현재 엔티티를 말하는지?
     @JoinColumn(name = "user_id") //
     private User user; // post와 조인해서 다대일 관계 만들고
@@ -40,7 +39,6 @@ public class Post extends Timestamped{
     public void update(PostRequestDto postRequestDto) {
         this.title = postRequestDto.getTitle();
         this.content = postRequestDto.getContent();
-
     }
 
 }

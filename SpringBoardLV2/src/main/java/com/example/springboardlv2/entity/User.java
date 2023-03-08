@@ -16,7 +16,7 @@ public class User {
 
     // nullable: null 허용 여부
     // unique: 중복 허용 여부 (false 일때 중복 허용)
-    @Column(nullable = false) //,unique = true) // unique = true 중복허용 x
+    @Column(nullable = false, unique = true) // unique = true 중복허용 x
     private String username;
 
     @Column(nullable = false)

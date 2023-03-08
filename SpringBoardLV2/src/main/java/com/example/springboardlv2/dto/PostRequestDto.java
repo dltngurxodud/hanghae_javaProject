@@ -12,4 +12,5 @@ public class PostRequestDto {
 
     private String content;
 
+
 }
